@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import LoginForm from './components/LoginForm';
+import LoginForm from './components/LoginForm/LoginForm';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   const adminUser = {
@@ -35,6 +36,7 @@ function App() {
 
   return (
     <div className="App">
+      {' '}
       {user.email !== '' ? (
         <div className="welcome">
           <h2>

@@ -16,7 +16,7 @@ function LoginForm({ Login, error }) {
         <h2 className="form-inner-title">Log In</h2>
         <h3>Content Management</h3>
         {error != '' ? <div className="error">{error}</div> : ''}
-        <div className="form-group">
+        {/*  <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
             type="text"
@@ -25,7 +25,7 @@ function LoginForm({ Login, error }) {
             onChange={(e) => setDetails({ ...details, name: e.target.value })}
             value={details.name}
           />
-        </div>
+        </div> */}
         <div className="form-group">
           <label htmlFor="email">Email:</label>
           <input
@@ -48,6 +48,11 @@ function LoginForm({ Login, error }) {
             value={details.password}
           />
         </div>
+        <label className="container">
+          Remember Me
+          <input type="checkbox" checked="" />
+          <span className="checkmark"></span>
+        </label>
         <input type="submit" value="Login" />
       </div>
     </form>
