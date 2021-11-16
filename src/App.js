@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import LoginForm from './components/LoginForm/LoginForm';
-import Navbar from './components/Navbar/Navbar';
 
 function App() {
   const adminUser = {
@@ -16,8 +15,8 @@ function App() {
     console.log(details);
 
     if (
-      details.email == adminUser.email &&
-      details.password == adminUser.password
+      details.email === adminUser.email &&
+      details.password === adminUser.password
     ) {
       console.log('Logged in');
       setUser({
